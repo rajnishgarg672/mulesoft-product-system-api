@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_318f5343_c509_42b0_ae32_f2a890e976c1_Output_Variables_authAmount = Any
+

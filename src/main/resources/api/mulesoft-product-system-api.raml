@@ -1,0 +1,19 @@
+#%RAML 1.0
+title: mulesoft-product-system-api
+description: System API for working with WeWork inventory
+version: v1.0.0
+
+
+/weworkinventory:
+  description: Inventory details
+  displayName: Inventory
+  get:
+    queryParameters:
+      productId:
+        required: true
+        type: string  
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include example/product-response.raml

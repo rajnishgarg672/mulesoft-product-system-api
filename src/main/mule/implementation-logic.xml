@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<sub-flow name="implementation-logic" doc:id="df6d97ca-0fd7-427d-b27c-aefe105d3920" >
+		<ee:transform doc:name="intialization and storing payload in variables" doc:id="2f3bf9a7-f680-49e2-9f15-03ef237ee5c5" >
+			<ee:message />
+			<ee:variables >
+				<ee:set-variable variableName="inputParam" ><![CDATA[%dw 2.0
+output application/json
+---
+attributes.queryParams.productId]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="b55d4370-9535-4b8e-8ede-39b6ddbfffae" message='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	"tracepoint": "INTIALIZATION",&#10;	"text":"After storing the payload in variables",&#10;	trackingId:correlationId&#10;}]' />
+		<flow-ref doc:name="read-product-catalog-details" doc:id="db31ac0a-192f-49aa-90d2-eb688c44f57d" name="read-product-catalog-details"/>
+		<logger level="INFO" doc:name="Logger" doc:id="bdd676df-1988-45a7-b609-30acbfd37884" message='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	"tracepoint": "PAYMENT-CATALOG",&#10;	"text":"After extracting products from master file",&#10;	trackingId:correlationId&#10;}]' />
+		<ee:transform doc:name="extracting the product catalog based on query parameter" doc:id="b2ea296d-78df-4dc7-9b9a-3a470664f5f0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+vars.productCatalog[vars.inputParam]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="end" doc:id="b46ec266-0a3e-4987-85c6-14e617d86d17" message='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	"tracepoint": "PRODUCT-EXTRACTION",&#10;	"text":"After extracting the specific to product id",&#10;	trackingId:correlationId&#10;}]' />
+	</sub-flow>
+	<sub-flow name="read-product-catalog-details" doc:id="318f5343-c509-42b0-ae32-f2a890e976c1" >
+		<file:read doc:name="Read" doc:id="61e7c60f-cd7b-476e-8588-f7ed19019e0e" config-ref="File_Config" path='#["product-master-catalog.json"]' />
+		<ee:transform doc:name="Transform Message" doc:id="e99e0ee0-4f96-47b2-a9a5-5eab49bcb866" >
+			<ee:message />
+			<ee:variables >
+				<ee:set-variable variableName="productCatalog" ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+	</sub-flow>
+</mule>

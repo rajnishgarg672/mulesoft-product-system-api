@@ -1,0 +1,177 @@
+{
+   "b71aaec3-7da1-4f3b-9dc1-47cfa54e2420": {
+      "Product": "Dedicated Desk 1",
+      "Location": "Minneapolis",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$500/month"
+   },
+   "a0ebf1a4-90a5-4be5-a171-061db814e174": {
+      "Product": "Dedicated Desk 2",
+      "Location": "Minneapolis",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$30/hr"
+   },
+   "34265139-4f99-4818-94e9-42f96018c5ce": {
+      "Product": "Dedicated Desk 3",
+      "Location": "New York",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$1000/month"
+   },
+   "af29304d-e72d-4037-825e-0574a6ec8ad3": {
+      "Product": "Dedicated Desk 4",
+      "Location": "New York",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$40/hour"
+   },
+   "e2478a97-5166-496f-ac40-c669d4ba5596": {
+      "Product": "Dedicated Desk 5",
+      "Location": "Boston",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$400/month"
+   },
+   "ee2d3055-79fd-45e5-8015-50f1e242abb8": {
+      "Product": "Dedicated Desk 6",
+      "Location": "Chicago",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$30/hr"
+   },
+   "f071bda4-6297-49be-b4df-067ad03e198f": {
+      "Product": "Standard office 1",
+      "Location": "San Francisco",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$1000/month"
+   },
+   "b821b0e6-d669-4bb7-a9b8-cdb2cacf341a": {
+      "Product": "Standard office 2",
+      "Location": "New York",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$60/hour"
+   },
+   "3f147fc9-6618-4d20-b5f7-f77bcefa249f": {
+      "Product": "Office Suite 1",
+      "Location": "Los Angeles",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$200/month"
+   },
+   "6ff00253-0a56-4fc6-940a-8f9c95fbd1be": {
+      "Product": "Office suite 2",
+      "Location": "Chicago",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$30/hr"
+   },
+   "5c55446e-6d91-4da2-94f5-5106491d8f08": {
+      "Product": "Full Floor office 9",
+      "Location": "Houston",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$2000/month"
+   },
+   "3e68f8b6-c42e-4d7c-b8d0-fef90a4b3892": {
+      "Product": "Full floor office 5",
+      "Location": "Phoenix",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$60/hour"
+   },
+   "c395611f-fe7b-405b-9642-d4522fff71e1": {
+      "Product": "Dedicated Desk A",
+      "Location": "Philadelphia",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$900/month"
+   },
+   "b749014b-63fc-442f-b29a-0380eb48c4c5": {
+      "Product": "Dedicated Desk B",
+      "Location": "San Antonio",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$30/hr"
+   },
+   "4629d070-ffdd-445b-ad45-25753104015f": {
+      "Product": "Dedicated Desk C",
+      "Location": "San Diego",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$1000/month"
+   },
+   "482aeb8c-8243-4c88-ac1f-775b15e5d549": {
+      "Product": "Dedicated Desk D",
+      "Location": "Austin",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$65/hour"
+   },
+   "ef6ccb36-745b-4d90-b1d3-1351d192bafa": {
+      "Product": "Dedicated Desk E",
+      "Location": "Raleigh",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$500/month"
+   },
+   "650f1b92-3e8b-4bc5-bc8e-bf2f5d91c9cc": {
+      "Product": "Dedicated Desk F",
+      "Location": "St. Louis",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$80/hr"
+   },
+   "202385e5-afb8-43fc-a8cf-f46e8f066037": {
+      "Product": "Standard office G",
+      "Location": "San Antonio",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$3000/month"
+   },
+   "6c00976e-3a4e-4204-86c4-c3cfdca981d8": {
+      "Product": "Standard office H",
+      "Location": "Austin",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$60/hour"
+   },
+   "cc08b0fe-47db-4deb-b856-baa96e34ef30": {
+      "Product": "Office Suite I",
+      "Location": "Raleigh",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$2400/month"
+   },
+   "c219b48a-7d94-4276-b24f-ae854f816b51": {
+      "Product": "Office suite J",
+      "Location": "St. Louis",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$30/hr"
+   },
+   "93d141af-04ab-4bd7-a4b6-3006ccd5a550": {
+      "Product": "Full Floor office K",
+      "Location": "Minneapolis",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$3500/month"
+   },
+   "9b865bc5-85ee-45f7-995f-adab0ed25a71": {
+      "Product": "Full floor office L",
+      "Location": "New York",
+      "Subscription Method": "Pay as you go",
+      "Unit": "Hour",
+      "Amount": "$50/hour"
+   },
+   "fc10b707-e5c3-4827-af88-14a46bda0984": {
+      "Product": "Full floor office M",
+      "Location": "Chicago",
+      "Subscription Method": "Monthly",
+      "Unit": "Month",
+      "Amount": "$700/month"
+   }
+}
